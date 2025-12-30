@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Axxexxories</title>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="logo">Fresh Axxexxories</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li class="dropdown">
+                <a href="#">Shop ▼</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#earrings">Earrings</a></li>
+                    <li><a href="#necklaces">Necklaces</a></li>
+                    <li><a href="#headbands">Headbands</a></li>
+                    <li><a href="#keychains">Keychains</a></li>
+                </ul>
+            </li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#cart">Cart</a></li>
+            <li><a href="#admin">Admin</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Carousel -->
+    <section class="carousel">
+        <div class="slides">
+            <div class="slide active" style="background-image: url('images/banner1.jpg')">
+                <h2>Handmade Earrings Crafted with Love</h2>
+            </div>
+            <div class="slide" style="background-image: url('images/banner2.jpg')">
+                <h2>Unique Necklaces for Every Occasion</h2>
+            </div>
+            <div class="slide" style="background-image: url('images/banner3.jpg')">
+                <h2>Beautiful Headbands & Keychains</h2>
+            </div>
+        </div>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+    </section>
+
+    <!-- Product Section -->
+    <section class="products" id="categories">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+            <div class="product-card" data-name="Beaded Earrings" data-price="120">
+                <img src="images/earring1.jpg" alt="Earring">
+                <h3>Beaded Earrings</h3>
+                <p>R120</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-name="Leather Necklace" data-price="250">
+                <img src="images/necklace1.jpg" alt="Necklace">
+                <h3>Leather Necklace</h3>
+                <p>R250</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-name="Colorful Headband" data-price="80">
+                <img src="images/headband1.jpg" alt="Headband">
+                <h3>Colorful Headband</h3>
+                <p>R80</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card" data-name="Handmade Keychain" data-price="50">
+                <img src="images/keychain1.jpg" alt="Keychain">
+                <h3>Handmade Keychain</h3>
+                <p>R50</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section id="cart">
+        <h2>Your Cart</h2>
+        <div class="cart-items"></div>
+        <p class="cart-total">Total: R0</p>
+        <button id="checkout-btn">Checkout</button>
+    </section>
+
+    <!-- Instagram & Social Links -->
+    <section class="socials">
+        <h2>Follow us on Instagram</h2>
+        <a href="#">@FreshAxxexxories</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Fresh Axxexxories | Handmade with Love</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
